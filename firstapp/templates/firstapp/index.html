@@ -1,0 +1,24 @@
+{% load static %}
+{% load vite_tags %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello World Django</title>
+  
+    {% render_vite_dev_scripts %}
+    
+
+</head>
+
+<body>
+    <h1>Hello Mozdalif</h1>
+
+  <div id="app">
+    <hello-world-vue></hello-world-vue>
+  </div>
+  {% render_vite_bundle %}
+</body>
+
+</html>
