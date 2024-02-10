@@ -123,14 +123,22 @@ STATICFILES_DIRS = [
     # "/var/www/static/",
 ]
 
+STATIC_URL = 'static/'
+# STATIC_ROOT = BASE_DIR / 'static'
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# vite vue app related settings 
 
 DEV_ENV = True
 VITE_DEV_PORT = 3080  # Port value can be customized as needed
 
 VITE_APP_DIR = BASE_DIR / "viteapp"
 
-VITE_APP_STATIC_DIR = "/static/viteapp"
+VITE_APP_STATIC_DIR = "static/viteapp"
